@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <title>Place Order</title>
+
+    <link rel="stylesheet" href="foodtruck.css">
+    <script>
+  (function(d) {
+    var config = {
+      kitId: 'fcd0pij',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <p>りゅうせい ストリートフーッド</p>
+        <img src="../foodtruck/logo-01.png" width="200" height="148" loading="lazy">
+
+        <nav>
+            <ul>
+                <li><a href="foodtruck-home.html">home</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="legal-notice.html">legal notice</a></li>
+                <li><a href="team.html">team</a></li>
+            </ul>
+        </nav>
+
+    </div>
+        <div class="container">
+            <header><h1>Ryusei Streetfood / Order</h1></header>
+
+            <nav>
+               
+            </nav>
+
+            <main>
+                <div class="information">
+                    <p><h5>Your Information:</h5></p>
+                    <p>
+                        <h4>Name:</h4>
+
+                        <input type="text" id="name" name="name" required
+                               minlength="4" maxlength="20" size="30">
+                    </p>
+                    <p>
+                        <h4>E-Mail:</h4>
+                        <label for="email"></label>
+                        <input type="email" id="email"
+                               pattern=".+@globex\.com" size="30" required>
+                    </p>
+                </div>
+
+
+
+                <p><h5>Your Order:</h5></p>
+                <table>
+                    <tr>
+                        <td><h4>Savory</h4></td>
+                        <td><h4>Amount</h4></td>
+                        <td><h4>Price</h4></td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Takoyaki</a></td>
+                        <td>6pcs</td>
+                        <td>13€</td>
+                        <td>
+                            <label for="takoyaki"></label>
+                            <input type="number" id="takoyaki" name="takoyaki"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Okonomiyaki</a></td>
+                        <td>350gr</td>
+                        <td>15€</td>
+                        <td>
+                            <input type="number" id="okonomiyaki" name="okonomiyaki"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Yakitori</a></td>
+                        <td>3pcs</td>
+                        <td>12€</td>
+                        <td>
+                            <input type="number" id="yakitori" name="yakitori"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Yakisoba</a></td>
+                        <td>300gr</td>
+                        <td>15€</td>
+                        <td>
+
+                            <input type="number" id="yakisoba" name="yakisoba"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Onigiri</a></td>
+                        <td>1pc</td>
+                        <td>5€</td>
+                        <td>
+
+                            <input type="number" id="onigiri" name="onigiri"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Sweet</h4></td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Dango</a></td>
+                        <td>3pcs</td>
+                        <td>12€</td>
+                        <td>
+                            <input type="number" id="dango" name="dango"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Daifuku</a></td>
+                        <td>1pc</td>
+                        <td>5€</td>
+                        <td>
+                            <input type="number" id="daifuku" name="daifuku"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="takoyaki.html">Dorayaki</a></td>
+                        <td>1pc</td>
+                        <td>2€</td>
+                        <td>
+                            <input type="number" id="daifuku" name="daifuku"
+                                   min="1" max="10">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h4>Total:</h4></td>
+                        <td></td>
+                        <td><h3>30€</h3></td>
+                        <td><a href="ready-order.html">Place order</a></td>
+                    </tr>
+
+                </table>
+            </main>
+
+            
+
+            <div class="footer">
+                <p>&copy; Andrea Born</p>
+                <p>3006210</p>
+                <p><a href="legal-notice.html">Legal Notice</a></p>
+                <p><a href="team.html">Team</a></p>
+        </div>
+        </div>
+
+</body>
+
+</html>
